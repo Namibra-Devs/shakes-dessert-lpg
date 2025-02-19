@@ -4,6 +4,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@layer utilities {
+  @keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-4px); }
+    50% { transform: translateX(4px); }
+    75% { transform: translateX(-4px); }
+    100% { transform: translateX(0); }
+  }
+
+  .hover-shake:hover {
+    animation: shake 0.3s ease-in-out;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

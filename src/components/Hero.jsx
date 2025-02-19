@@ -24,10 +24,10 @@ const Hero = () => {
 
           {/* Category Selection */}
           <div className="mt-6 flex justify-center gap-6">
-            <button className="w-16 h-16 p-4 flex items-center justify-center bg-white/30 rounded-2xl"><img src={burgger} alt="Hamburger" /></button>
-            <button className="w-16 h-16 p-4 flex items-center justify-center bg-white/30 rounded-2xl"><img src={softdrink} alt="Soft Drink" /></button>
-            <button className="w-16 h-16 p-4 flex items-center justify-center bg-white/30 rounded-2xl"><img src={icecream} alt="Ice Cream" /></button>
-            <button className="w-16 h-16 p-4 flex items-center justify-center bg-white/30 rounded-2xl"><img src={cocktail} alt="Cocktail" /></button>
+            <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={burgger} alt="Hamburger" /></button>
+            <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={softdrink} alt="Soft Drink" /></button>
+            <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={icecream} alt="Ice Cream" /></button>
+            <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={cocktail} alt="Cocktail" /></button>
           </div>
 
           <button className="inline-flex items-center gap-6 mt-8 bg-black py-4 px-8 rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white font-medium">
@@ -38,7 +38,7 @@ const Hero = () => {
 
         {/* Floating Pizza */}
         <div className="w-full md:max-w-[50%]">
-          <img src={pizza} alt="Pizza" className="w-full" />
+          <img src={pizza} alt="Pizza" className="w-full hover-shake" />
         </div>
       </div>
     </section>
