@@ -32,7 +32,7 @@ const Hero = () => {
               <button className="w-14 md:w-16 h-14 md:h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={cocktail} alt="Cocktail" /></button>
             </div>
 
-            <button className="inline-flex items-center gap-6 w-full md:w-fit mt-4 md:mt-8 bg-black py-4 px-8 rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white font-medium">
+            <button className="inline-flex items-center justify-center gap-6 w-full md:w-fit mt-7 md:mt-8 bg-black py-4 px-8 rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white font-medium">
               View our categories
               <BsArrowRight className="text-white text-2xl group-hover:translate-x-2 duration-700" />
             </button>
