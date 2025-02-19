@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import categoriesData from "./categoriesData";
+import { BsArrowRight, BsArrowLeft } from "react-icons/bs"; 
 
 const CategoriesListSlider = () => {
   return (
@@ -11,7 +12,7 @@ const CategoriesListSlider = () => {
       <Swiper
         className="w-full pb-10"
         modules={[Navigation, Pagination, Autoplay]}
-        navigation
+        navigation={{nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
         pagination={{ el: ".custom-pagination", clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
         spaceBetween={20}
@@ -27,8 +28,7 @@ const CategoriesListSlider = () => {
         {categoriesData.map((cat, index) => (
           <SwiperSlide
             key={index}
-            className="w-64 h-96 flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-4"
-          >
+            className="w-64 h-96 flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-4">
             {/* Image Container */}
             <div className="w-full h-40 flex justify-center mb-20 mt-16">
               <img
@@ -47,7 +47,20 @@ const CategoriesListSlider = () => {
       </Swiper>
 
       {/* Custom Pagination */}
-      <div className="custom-pagination flex justify-center gap-2 mt-4"></div>
+      <div className="custom-pagination flex justify-center gap-1 mt-4"></div>
+
+      {/* Custom Navigation Buttons */}
+      <div className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2">
+        <button className="swiper-button-prev custom-nav flex items-center">
+          <BsArrowLeft className="text-gray-500 p-3 rounded-full" />
+        </button>
+      </div>
+      <div className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2">
+        <button className="swiper-button-next custom-nav flex items-center">
+          <BsArrowRight className="text-gray-500 p-3 rounded-full" />
+        </button>
+      </div>
+
 
       {/* Custom Styles */}
       <style>
@@ -59,8 +72,7 @@ const CategoriesListSlider = () => {
           border-radius: 50%;
         }
         .swiper-button-next::after, .swiper-button-prev::after {
-          font-size: 15px;
-          color: black;
+          display:none;
         }
         .custom-pagination .swiper-pagination-bullet {
           width: 20px;
