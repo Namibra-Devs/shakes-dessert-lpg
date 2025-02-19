@@ -19,9 +19,9 @@ const MobileApp = () => {
           our app and unlock a world of delicious recipes, exclusive content,
           and personalized dessert recommendations.
         </p>
-        <div className="mt-6 flex flex-col md:flex-row items-center justify-start gap-4">
-          <img src={appstore} alt="App Store" className="w-full md:w-fit"/>
-          <img src={playstore} alt="Google Play" className="w-full md:w-fit" />
+        <div className="w-full mt-6 flex flex-col lg:flex-row items-center justify-start gap-4">
+          <img src={appstore} alt="App Store" className="w-full lg:w-fit"/>
+          <img src={playstore} alt="Google Play" className="w-full lg:w-fit" />
         </div>
       </div>
     </section>

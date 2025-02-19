@@ -15,21 +15,21 @@ const Hero = () => {
           <div className="px-6 md:px-0 w-full md:max-w-[50%] flex flex-col items-center md:items-start gap-2 md:gap-4">
             
             <div className="text-center md:text-left">
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-80">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-80 tracking-tight">
                 Welcome to
               </h1>
-              <h1 className="text-3xl md:text-5xl font-bold text-gray-80">
+              <h1 className="text-3xl md:text-5xl font-bold text-gray-80 tracking-tight">
                 Shakes and Dessert
               </h1>
             </div>
-            <p className="text-gray-600 font-medium mt-4">Explore our delicious categories</p>
+            <p className="text-gray-600 mt-4">Explore our delicious categories</p>
 
             {/* Category Selection */}
-            <div className="mt-3 md:mt-6 flex justify-center gap-3 md:gap-6">
-              <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={burgger} alt="Hamburger" /></button>
-              <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={softdrink} alt="Soft Drink" /></button>
-              <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={icecream} alt="Ice Cream" /></button>
-              <button className="w-16 h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={cocktail} alt="Cocktail" /></button>
+            <div className="mt-3 md:mt-6 flex justify-between gap-2 md:gap-6 w-full md:w-fit">
+              <button className="w-14 md:w-16 h-14 md:h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={burgger} alt="Hamburger" /></button>
+              <button className="w-14 md:w-16 h-14 md:h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={softdrink} alt="Soft Drink" /></button>
+              <button className="w-14 md:w-16 h-14 md:h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={icecream} alt="Ice Cream" /></button>
+              <button className="w-14 md:w-16 h-14 md:h-16 p-4 hover-shake flex items-center justify-center bg-white/30 rounded-2xl"><img src={cocktail} alt="Cocktail" /></button>
             </div>
 
             <button className="inline-flex items-center gap-6 w-full md:w-fit mt-4 md:mt-8 bg-black py-4 px-8 rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white font-medium">
