@@ -22,7 +22,7 @@ const Hero = () => {
                 Shakes and Dessert
               </h1>
             </div>
-            <p className="text-gray-600 mt-4">Explore our delicious categories</p>
+            <p className="text-gray-600 font-medium mt-4">Explore our delicious categories</p>
 
             {/* Category Selection */}
             <div className="mt-3 md:mt-6 flex justify-center gap-3 md:gap-6">
