@@ -7,11 +7,11 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <section className="relative bg-primarybg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center pt-4 pb-4 px-4 md:px-14">
+    <section className="relative bg-primarybg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center p-4 md:p-14">
       {/* Overlay */}
       <div className="absolute inset-0 bg-white/30 backdrop-blur-md"></div>
 
-      <div className="relative bg-white/15 backdrop-blur-lg w-full p-2 md:p-12 overflow-hidden rounded-3xl">
+      <div className="relative bg-white/15 backdrop-blur-lg w-full p-2 md:p-12 overflow-hidden border border-white/10 rounded-3xl">
         <Hero />
         <Categories />
         <MobileApp />

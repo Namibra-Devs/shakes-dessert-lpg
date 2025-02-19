@@ -7,7 +7,7 @@ const categoriesData = [
     {name: "Cakes", img: img1},
     {name: "Snaks", img: img2},
     {name: "Drinks", img: img3},
-    {name: "Chockclate", img: img4},
+    {name: "Chocolate", img: img4},
 ]
 
 export default categoriesData;
