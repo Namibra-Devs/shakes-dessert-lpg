@@ -15,7 +15,7 @@ const CategoriesListSlider = () => {
         navigation={{nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }}
         pagination={{ el: ".custom-pagination", clickable: true }}
         autoplay={{ delay: 3000, disableOnInteraction: false, pauseOnMouseEnter: true }}
-        spaceBetween={20}
+        spaceBetween={40}
         loop={true}
         speed={800}
         effect="slide"
@@ -28,13 +28,13 @@ const CategoriesListSlider = () => {
         {categoriesData.map((cat, index) => (
           <SwiperSlide
             key={index}
-            className="w-64 h-96 flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-4">
+            className="w-[414px] h-[447px] flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-[16px]">
             {/* Image Container */}
-            <div className="w-full h-40 flex justify-center mb-20 mt-16">
+            <div className=" flex justify-center">
               <img
                 src={cat.img}
                 alt={`Slide ${index + 1}`}
-                className="object-contain w-full h-full"
+                className="object-contain w-[251px] h-[313.73px]"
               />
             </div>
 
@@ -47,7 +47,7 @@ const CategoriesListSlider = () => {
       </Swiper>
 
       {/* Custom Pagination */}
-      <div className="custom-pagination flex justify-center gap-1 mt-4"></div>
+      <div className="custom-pagination flex justify-center gap-[10px] mt-[70px]"></div>
 
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2">
@@ -75,15 +75,16 @@ const CategoriesListSlider = () => {
           display:none;
         }
         .custom-pagination .swiper-pagination-bullet {
-          width: 20px;
-          height: 4px;
+          width: 26px;
+          height: 6px;
           background-color: white;
-          border-radius: 4px;
+          border-radius: 26px;
+          border: 1px solid light-gray;
           transition: all 0.3s ease;
         }
         .custom-pagination .swiper-pagination-bullet-active {
           background-color: white;
-          width: 35px;
+          width: 55px;
         }
         `}
       </style>

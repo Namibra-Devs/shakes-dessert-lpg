@@ -5,7 +5,7 @@ import img4 from "../../assets/home/categories/4.png"
 
 const categoriesData = [
     {name: "Cakes", img: img1},
-    {name: "Snaks", img: img2},
+    {name: "Snacks", img: img2},
     {name: "Drinks", img: img3},
     {name: "Chocolate", img: img4},
 ]
