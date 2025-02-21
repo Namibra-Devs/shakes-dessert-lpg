@@ -25,10 +25,10 @@ const Hero = () => {
           
             {/* Category Selection */}
             <div className="mt-4 md:mt-12 flex justify-between gap-[16px] md:gap-[40px] w-full md:w-fit">
-              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] flex items-center justify-center bg-white/30 rounded-[14px]"><img src={burgger} alt="Hamburger" /></button>
-              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] flex items-center justify-center bg-white/30 rounded-[14px]"><img src={softdrink} alt="Soft Drink" /></button>
-              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] flex items-center justify-center bg-white/30 rounded-[14px]"><img src={icecream} alt="Ice Cream" /></button>
-              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] flex items-center justify-center bg-white/30 rounded-[14px]"><img src={cocktail} alt="Cocktail" /></button>
+              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] md:p-[20px] flex items-center justify-center bg-white/30 rounded-[14px] md:rounded-[26px]"><img src={burgger} alt="Hamburger" /></button>
+              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] md:p-[20px] flex items-center justify-center bg-white/30 rounded-[14px] md:rounded-[26px]"><img src={softdrink} alt="Soft Drink" /></button>
+              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] md:p-[20px] flex items-center justify-center bg-white/30 rounded-[14px] md:rounded-[26px]"><img src={icecream} alt="Ice Cream" /></button>
+              <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] md:p-[20px] flex items-center justify-center bg-white/30 rounded-[14px] md:rounded-[26px]"><img src={cocktail} alt="Cocktail" /></button>
             </div>
 
             <button className="inline-flex items-center justify-center gap-6 w-full md:w-fit mt-4 md:mt-8 bg-[#2D2D2D] py-[19px] px-[40px] rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white text-[14px] md:text-[16px] font-medium">
