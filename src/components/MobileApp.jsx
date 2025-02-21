@@ -14,7 +14,7 @@ const MobileApp = () => {
       </div>
       <div className="text-center md:text-left w-full md:max-w-[50%] flex flex-col gap-10">
         <h2 className="text-2xl md:text-4xl font-bold">Download Our App</h2>
-        <p className="text-white font-medium">
+        <p className="text-white font-medium text-[14px]">
           Discover the easiest way to satisfy your dessert cravings! Download
           our app and unlock a world of delicious recipes, exclusive content,
           and personalized dessert recommendations.

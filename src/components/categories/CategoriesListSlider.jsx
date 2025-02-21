@@ -28,13 +28,13 @@ const CategoriesListSlider = () => {
         {categoriesData.map((cat, index) => (
           <SwiperSlide
             key={index}
-            className="w-[414px] h-[447px] flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-[16px]">
+            className="w-[414px] h-[303px] md:h-[447px] flex flex-col justify-between items-center bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-[16px]">
             {/* Image Container */}
-            <div className=" flex justify-center">
+            <div className=" flex justify-center mb-4 md:mb-0">
               <img
                 src={cat.img}
                 alt={`Slide ${index + 1}`}
-                className="object-contain w-[251px] h-[313.73px]"
+                className="object-contain w-[251px] h-[210px] md:h-[313.73px]"
               />
             </div>
 
@@ -47,7 +47,7 @@ const CategoriesListSlider = () => {
       </Swiper>
 
       {/* Custom Pagination */}
-      <div className="custom-pagination flex justify-center gap-[10px] mt-[70px]"></div>
+      <div className="custom-pagination flex justify-center gap-[6px] md:gap-[10px] mt-[55px] md:mt-[70px]"></div>
 
       {/* Custom Navigation Buttons */}
       <div className="absolute top-1/3 left-0 z-10 transform -translate-y-1/2">
