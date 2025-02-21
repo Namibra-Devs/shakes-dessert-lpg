@@ -1,7 +1,7 @@
 import CategoriesListSlider from "./CategoriesListSlider";
 const Categories = () => {
   return (
-    <section className="pb-28 pt-28 md:pt-20 md:pb-20 bg-transparent">
+    <section className="pb-28 pt-28 md:pt-0 md:pb-20 bg-transparent">
       <h2 className="text-2xl md:text-4xl font-bold text-center text-gray-800">
         Our Categories
       </h2>

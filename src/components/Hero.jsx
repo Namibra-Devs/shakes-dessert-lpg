@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
 
           {/* Floating Pizza */}
-          <div className="w-full md:w-[50%] flex justify-center">
+          <div className="w-full flex justify-center md:-mt-28">
             <img src={pizza} alt="Pizza" className="w-4/5 md:w-[768px]" />
           </div>
         </div>
