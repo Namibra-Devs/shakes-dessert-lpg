@@ -50,12 +50,12 @@ const CategoriesListSlider = () => {
       <div className="custom-pagination flex justify-center gap-[10px] mt-[70px]"></div>
 
       {/* Custom Navigation Buttons */}
-      <div className="absolute top-1/2 left-0 z-10 transform -translate-y-1/2">
+      <div className="absolute top-1/3 left-0 z-10 transform -translate-y-1/2">
         <button className="swiper-button-prev custom-nav flex items-center">
           <BsArrowLeft className="text-gray-500 p-3 rounded-full" />
         </button>
       </div>
-      <div className="absolute top-1/2 right-0 z-10 transform -translate-y-1/2">
+      <div className="absolute top-1/3 right-0 z-10 transform -translate-y-1/2">
         <button className="swiper-button-next custom-nav flex items-center">
           <BsArrowRight className="text-gray-500 p-3 rounded-full" />
         </button>
