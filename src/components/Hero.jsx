@@ -5,6 +5,7 @@ import icecream from "../assets/home/icons/ice-cream.png"
 import cocktail from "../assets/home/icons/cocktail.png"
 import softdrink from "../assets/home/icons/soft-drink.png"
 import { BsArrowRight } from "react-icons/bs";
+
 const Hero = () => {
   return (
     <section className="bg-transparent relative w-full flex items-start justify-center">
@@ -31,7 +32,10 @@ const Hero = () => {
               <button className="w-[60px] md:w-[79px] h-[60px] md:h-[80px] p-[10px] md:p-[20px] flex items-center justify-center bg-white/30 rounded-[14px] md:rounded-[26px]"><img src={cocktail} alt="Cocktail" /></button>
             </div>
 
-            <button className="inline-flex items-center justify-center gap-6 w-full md:w-fit mt-4 md:mt-8 bg-[#2D2D2D] py-[19px] px-[40px] rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white text-[14px] md:text-[16px] font-medium">
+ 
+            <button
+                onClick={() => document.getElementById("categories").scrollIntoView({ behavior: "smooth" })} 
+               className="inline-flex items-center justify-center gap-6 w-full md:w-fit mt-4 md:mt-8 bg-[#2D2D2D] py-[19px] px-[40px] rounded-bl-3xl group hover:bg-red-600 duration-700 rounded-tr-3xl text-white text-[14px] md:text-[16px] font-medium">
               View our categories
               <BsArrowRight size={15} className="text-white group-hover:translate-x-2 duration-700" />
             </button>

@@ -17,7 +17,7 @@ const Home = () => {
         <MobileApp />
       </div>
       <img src={floatFood} alt="Classic Cooling" className="w-20 md:w-36 absolute bottom-1 md:bottom-2 left-3" />
-      <img src={floatFoodI} alt="Classic Cooling" className="w-24 md:w-24 absolute top-[110vh] md:top-[110vh] -right-5 md:right-0" />
+      <img src={floatFoodI} alt="Classic Cooling" className="w-24 md:w-24 absolute top-[82vh] md:top-[110vh] -right-5 md:right-0" />
       <Footer/>
     </section>
   );
